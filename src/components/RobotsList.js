@@ -27,7 +27,7 @@ const RobotList = () => {
         />
         <div className="row">
             <div className="col-md-8">
-                <table className="table table-striped table-bordered">
+                <table className="table">
                     <thead className="table-dark">
                         <tr>
                             <th>ID</th>
