@@ -1,0 +1,54 @@
+.robot-card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.robot-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.image-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.robot-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+}
+
+.robot-info {
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+}
+
+.robot-info p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+/* Modificar la columna del RobotDetail para alinear mejor con el diseño de referencia */
+@media (min-width: 768px) {
+    .robot-detail-col {
+        margin-left: 20px;
+    }
+}
