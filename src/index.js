@@ -5,13 +5,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import {IntlProvider} from 'react-intl';
+import localEsMessages from './locales/es.json';
+import localEnMessages from './locales/en.json';
 
+
+const userLocale = navigator.language.startsWith("es") ? "es" : "en";
+const messages = userLocale === "es" ? localEsMessages : localEnMessages;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <IntlProvider locale={userLocale} messages={messages}>
     <App />
-  </React.StrictMode>
+  </IntlProvider>
+</React.StrictMode>
 );
   
 

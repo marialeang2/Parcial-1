@@ -1,3 +1,6 @@
+.id-column {
+    font-weight: bold;
+}
 .robot-card {
     width: 100%;
     border: 1px solid #ccc;
@@ -8,6 +11,8 @@
     font-family: Arial, sans-serif;
     margin-top: 0;
     overflow: hidden;
+    border: 2px solid black; /* Borde negro de 2px */
+    border-radius: 4px;
 }
 
 .robot-title {
@@ -24,6 +29,7 @@
     display: flex;
     justify-content: center;
     background-color: #f5f5f5;
+    
 }
 
 .robot-image {
@@ -32,6 +38,8 @@
     object-fit: contain;
     margin: 0 auto;
     background-color: #f5f5f5;
+    border: 2px solid black; /* Borde negro de 2px */
+    border-radius: 4px;
    
 }
 
